@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Science | HAM TECHNOLOGIES</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #333;
+    }
+    .mentors {
+      padding: 40px 0;
+      background-color: #f1f1f1;
+    }
+    .mentors h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .mentor-profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .mentor {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .mentor img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="dsc.jpg" alt="Datascience Team at Work" />
+    <h1>Datascience Internship at HAM TECHNOLOGIES</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Why Choose HAM TECHNOLOGIES?</h2>
+      <ul>
+        <li><strong>Expert Mentorship:</strong> Learn from industry leaders with extensive experience in robotics.</li>
+        <li><strong>Comprehensive Training:</strong> Engage in real-world projects covering AI, machine learning, and embedded systems.</li>
+        <li><strong>Career Opportunities:</strong> Gain skills that open doors to top tech companies and research institutions.</li>
+      </ul>
+      <h2>What is Data Science ?</h2>
+      <p>
+      Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI) and machine learning with specific subject matter expertise to uncover actionable insights hidden in an organization’s data. These insights can be used to guide decision making and strategic planning.
+     </p>
+     <h2>Skills</h2>
+      <p>
+      1. Python<br>
+      2. R<br>
+      3. SQL<br>
+      4. Java<br>
+      5. Julia<br>
+      </p>
+    </section>
+
+     <section class="mentors container">
+    <h2>Meet Our Mentors</h2>
+    <div class="mentor-profiles">
+      <div class="mentor">
+        <img src="andre yukio.jpeg" alt="Andre Yukio" />
+        <h3>Andre Yukio</h3>
+        <p><a href="https://www.linkedin.com/in/andreyukio/" target="_blank">LinkedIn Profile</a></p>
+      </div>
+      <div class="mentor">
+        <img src="michael herrison.jpeg" alt="Michael Herrison" />
+        <h3>Michael Herrison</h3>
+        <p><a href="https://www.linkedin.com/in/michael-erlihson-8208616/" target="_blank">LinkedIn Profile</a></p>
+      </div>
+      <div class="mentor">
+        <img src="teo calva.jpeg" alt="Teo Calvo" />
+        <h3>Teo Calvo</h3>
+        <p><a href="https://www.linkedin.com/in/teocalvo/" target="_blank">LinkedIn Profile</a></p>
+      </div>
+    </div>
+  </section>
+
+    <section>
+      <h2>Register Now</h2>
+      <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="name">Full Name (in CAPS):</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 HAM. All rights reserved.</p>
+    <p>Follow us on:
+      <a href="#">LinkedIn</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      if (name !== name.toUpperCase()) {
+        alert("Please enter your name in uppercase letters.");
+        return false;
+      }
+      alert("Thanks for registering! We will reach out to you soon.");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
