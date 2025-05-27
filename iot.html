@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IoT and Cloud Computing | HAM TECHNOLOGIES</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      max-width: 100%;
+      max-height: 30%;
+      height: auto;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #333;
+    }
+    .mentors {
+      padding: 40px 0;
+      background-color: #f1f1f1;
+    }
+    .mentors h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .mentor-profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .mentor {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .mentor img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+OBOB    }
+OB    input[type="submit"] {
+OB      margin-top: 15px;
+      padding: 10px 20px;
+OB      background-color: #333;
+      color: #fff;
+OB      border: none;
+OB      cursor: pointer;
+OB    }
+OBOB    footer {
+OB      background-color: #333;
+      color: #fff;
+OB      text-align: center;
+      padding: 10px 0;
+OBOBOB      margin-top: 40px;
+    }
+OB  </style>
+</head>
+OBOB<body>
+OBOB
+  <header>
+    <img src="iot1.jpg" alt="IoT and Cloud Computing at Work" />
+    <h1>IoT and Cloud Computing at HAM TECHNOLOGIES</h1>
+OB  </header>
+
+OB  <main>
+    <section>
+OB      <h2>Why Choose HAM TECHNOLOGIES?</h2>
+      <ul>
+        <li><strong>Expert Mentorship:</strong> Learn from industry leaders with extensive experience in robotics.</li>
+        <li><strong>Comprehensive Training:</strong> Engage in real-world projects covering AI, machine learning, and embedded systems.</li>
+        <li><strong>Career Opportunities:</strong> Gain skills that open doors to top tech companies and research institutions.</li>
+      </ul>
+      <h2>What is IoT (Internet of Things)?</h2>
+      <p>
+      IoT is a system of interconnected physical devices that collect and exchange data using the internet. Examples include smart homes, fitness trackers, industrial sensors, etc.
+     </p>
+     <h2> What is Cloud Computing?</h2>
+      <p>
+     Cloud Computing means delivering services (servers, storage, databases, networking, software) over the internet (“the cloud”).    
+      </p>
+     <h2>Skills Needed for IoT Certification</h2>
+      <p>
+      1. Embedded Systems & Hardware Knowledge : 
+                Microcontrollers (like Arduino, ESP32, Raspberry Pi)
+                Sensors and actuators<br>
+      2.  Programming Skills : 
+                C, C++, Python (for hardware communication)
+                MQTT, HTTP (IoT communication protocols)<br>
+      3. Networking Basics : 
+                IP addressing, Wi-Fi, Bluetooth, ZigBee
+                Understanding how devices connect<br>
+      4. Data Handling & Visualization : 
+                Basics of how data is collected, stored, and visualized (e.g., using ThingsBoard, Node-RED)<br>
+      5. Security :
+                Device security, data encryption, access control<br>
+      </p>
+      <h2>Skills Needed for IoT Certification</h2>
+      <p>
+      1.Cloud Concepts : 
+            Public, private, hybrid cloud
+            IaaS, PaaS, SaaS <br>
+
+      2. Core Cloud Services : 
+            Storage (S3, Azure Blob)
+            Compute (EC2, Azure VM, GCP Compute Engine)
+            Databases (RDS, Cosmos DB)<br>
+
+      3. Deployment & Management :
+            Launching cloud instances
+            Using dashboards like AWS Console or Azure Portal<br>
+
+      4. Security & Compliance :
+            Identity and Access Management (IAM)
+            Encryption, firewalls, compliance rules<br>
+
+      5. Monitoring & Automation :
+            CloudWatch, Azure Monitor
+            Scripting with Python or Bash <br>
+      </p>
+    </section>
+
+     <section class="mentors container">
+    <h2>Meet Our Mentors</h2>
+    <div class="mentor-profiles">
+      <div class="mentor">
+        <img src="Lata.jpeg" alt="Lata" />
+        <h3>Prof. Lata</h3>
+        <p><a href="https://www.linkedin.com/in/andreyukio/" target="_blank">LinkedIn Profile</a></p>
+      </div>
+      <div class="mentor">
+        <img src="sandeep.jpeg" alt="Sandeep" />
+        <h3>Prof.Sandeep</h3>
+        <p><a href="https://www.linkedin.com/in/michael-erlihson-8208616/" target="_blank">LinkedIn Profile</a></p>
+      </div>
+      <div class="mentor">
+        <img src="satish.jpeg" alt="sathish" />
+        <h3>Prof. Sathish</h3>
+        <p><a href="https://www.linkedin.com/in/teocalvo/" target="_blank">LinkedIn Profile</a></p>
+      </div>
+    </div>
+  </section>
+
+    <section>
+      <h2>Register Now</h2>
+      <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="name">Full Name (in CAPS):</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 HAM. All rights reserved.</p>
+    <p>Follow us on:
+      <a href="#">LinkedIn</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      if (name !== name.toUpperCase()) {
+        alert("Please enter your name in uppercase letters.");
+        return false;
+      }
+      alert("Thanks for registering! We will reach out to you soon.");
+      return true;
+    }
+  </script>
+
+</body>
+</html>
